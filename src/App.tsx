@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, CSSProperties } from "react";
 import maleImg from "./assets/male.jpg";
 
 export default function App() {
@@ -97,7 +97,7 @@ export default function App() {
   );
 }
 
-const styles = {
+const styles: Record<string, CSSProperties> = {
   page: {
     minHeight: "100vh",
     display: "grid",
